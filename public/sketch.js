@@ -20,9 +20,9 @@ function setup() {
 }
 
 function draw() {
-  noStroke();
-  fill("yellow");
-  circle(mouseX, mouseY, 20);
+  stroke("black");
+  fill("white");
+  circle(mouseX, mouseY, 18);
 }
 
 function mouseMoved() {
