@@ -16,10 +16,11 @@ function newBroadcast(data) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background("black");
+  //background("black");
 }
 
 function draw() {
+  background("black");
   stroke("black");
   fill("white");
   circle(mouseX, mouseY, 18);
