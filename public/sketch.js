@@ -9,6 +9,7 @@ function newConnection() {
 
 function newBroadcast(data) {
   console.log(data);
+  noStroke();
   fill("red");
   circle(data.x, data.y, 10);
 }
@@ -19,6 +20,7 @@ function setup() {
 }
 
 function draw() {
+  noStroke();
   fill("yellow");
   circle(mouseX, mouseY, 20);
 }
