@@ -21,7 +21,12 @@ function setup() {
 
 function draw() {
   stroke("black");
-  fill("white");
+  if (mousePressed) {
+    fill("white");
+  } else {
+    noFill();
+  }
+  //fill("white");
   circle(mouseX, mouseY, 18);
 }
 
