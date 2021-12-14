@@ -25,7 +25,7 @@ function draw() {
   circle(mouseX, mouseY, 18);
 }
 
-function mousePressed() {
+function mouseDragged() {
   //function mouseMoved() {
   let message = {
     x: mouseX,
