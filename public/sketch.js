@@ -9,21 +9,24 @@ function newConnection() {
 
 function newBroadcast(data) {
   console.log(data);
+  fill("red");
+  circle(data.x, data.y, 10);
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  background(220);
 }
 
 function draw() {
-  background(220);
+  fill("yellow");
   circle(mouseX, mouseY, 20);
 }
 
 function mouseMoved() {
   let message = {
     x: mouseX,
-    year: mouseY,
+    y: mouseY,
   };
 
   clientSocket.emit("mouse", message);
