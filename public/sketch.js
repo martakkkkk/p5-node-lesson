@@ -15,7 +15,7 @@ function newBroadcast(data) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220);
+  background("black");
 }
 
 function draw() {
