@@ -9,29 +9,28 @@ function newConnection() {
 
 function newBroadcast(data) {
   console.log(data);
-  noStroke();
-  fill("red");
-  circle(data.x, data.y, 10);
+  stroke("purple");
+  line(data.x - 66, data.y, data.x + 66, data.y);
+  line(data.x, data.y - 66, data.x, data.y + 66);
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("black");
+  strokeWeight(2);
 }
 
 function draw() {
-  stroke("black");
-  if (mousePressed) {
-    fill("white");
-  } else {
-    noFill();
-  }
-  //fill("white");
-  circle(mouseX, mouseY, 18);
+  stroke("white");
+  line(mouseX - 66, mouseY, mouseX + 66, mouseY);
+  line(mouseX, mouseY - 66, mouseX, mouseY + 66);
+
+  // stroke("black");
+  // fill("white");
+  // circle(mouseX, mouseY, 18);
 }
 
-function mousePressed() {
-  //function mouseMoved() {
+function mouseMoved() {
   let message = {
     x: mouseX,
     y: mouseY,
